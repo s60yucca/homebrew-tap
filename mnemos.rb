@@ -5,21 +5,21 @@
 class Mnemos < Formula
   desc "Persistent memory engine for AI agents"
   homepage "https://github.com/s60yucca/mnemos"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.1/mnemos_darwin_amd64.tar.gz"
-      sha256 "441973d6b382960ee8fbd0b3ced890f20048b0690e3672d2c145a9bf52691889"
+      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.2/mnemos_darwin_amd64.tar.gz"
+      sha256 "cdd5c8ea6516d354c5204e56c4255000763ffbb82b585523c6876522314b829b"
 
       define_method(:install) do
         bin.install "mnemos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.1/mnemos_darwin_arm64.tar.gz"
-      sha256 "8cf8f23d0e6501d95b99406eb4df0036e35c27b625bd2500c3c2d8b33d238c81"
+      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.2/mnemos_darwin_arm64.tar.gz"
+      sha256 "b3539705b6527ec8027c26ddb9eb5b606672fae2d2dce0edb853ce14cbb72206"
 
       define_method(:install) do
         bin.install "mnemos"
@@ -29,15 +29,15 @@ class Mnemos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.1/mnemos_linux_amd64.tar.gz"
-      sha256 "750a7b83cb4937fa402d2f82fcffdcb4078c2d143ba082fa34d564d07f34cafd"
+      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.2/mnemos_linux_amd64.tar.gz"
+      sha256 "fab2515112d9428746f28f609eff8e4f9865dd18841fef08970ed15c8f19e585"
       define_method(:install) do
         bin.install "mnemos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.1/mnemos_linux_arm64.tar.gz"
-      sha256 "1102fa3b4717da7661501b1a198d842ccab59639d22ed3cf9fc5d546ad6c5922"
+      url "https://github.com/s60yucca/mnemos/releases/download/v1.0.2/mnemos_linux_arm64.tar.gz"
+      sha256 "fde671e0364bf99e03d097fd288401c2fb89edeaae6486160b7d668cb2290a8b"
       define_method(:install) do
         bin.install "mnemos"
       end
