@@ -3,7 +3,7 @@ cask "mnemos" do
   name "mnemos"
   desc "Persistent memory engine for AI agents"
   homepage "https://github.com/s60yucca/mnemos"
-  version "1.2.0"
+  version "1.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "mnemos" do
   on_macos do
     on_intel do
       url "https://github.com/s60yucca/mnemos/releases/download/v#{version}/mnemos_darwin_amd64.tar.gz"
-      sha256 "059c4ad358db77b988390237bab70c69558d3e69244ced1b535162438d7b583b"
+      sha256 "45961a52b235c83deaa1a2cdff76f055a5d7e117e9c9cc6624b71d7bf137450e"
     end
     on_arm do
       url "https://github.com/s60yucca/mnemos/releases/download/v#{version}/mnemos_darwin_arm64.tar.gz"
-      sha256 "fe4583ee3accc69a2cde1349938bd55d67da337441db5c45fd05876cc2c0fa34"
+      sha256 "e6a929bfd63e0fd16d52071503d6acf6dcb62600a67f3cbb943393f155c26faf"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/s60yucca/mnemos/releases/download/v#{version}/mnemos_linux_amd64.tar.gz"
-      sha256 "83533de89ea4f10e967d1379eb8f0c85038741016278ce4664dc869298c483ff"
+      sha256 "b519c3a5f51e564de067f36eb158e9de56ddab391757f67afd8e8fa240d5071a"
     end
     on_arm do
       url "https://github.com/s60yucca/mnemos/releases/download/v#{version}/mnemos_linux_arm64.tar.gz"
-      sha256 "a26baf5841f2b77f920a6ab7bfbc3ef2a3eac062ce83265e279af6afbac6a1d7"
+      sha256 "3667f402f230edf6139b205a34dc5cd19ffbf5a6ecd3d5aa5f01c6a19b89fe39"
     end
   end
 
